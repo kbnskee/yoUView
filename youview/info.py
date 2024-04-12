@@ -1,2 +1,2 @@
 def author():
-    return 'Karl Kevin Domingo'
+    print('Karl Kevin Domingo')
