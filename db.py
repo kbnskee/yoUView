@@ -1,0 +1,46 @@
+db_engine=False
+db_name=False
+db_user=False
+db_password=False
+db_host=False
+db_port=False
+
+
+def set_database(
+    ENGINE=False,
+    NAME=False,
+    USER=False,
+    PASSWORD=False,
+    HOST=False,
+    PORT=False,):
+    if ENGINE == False:
+        return f"ENGINE status is False."
+    else:
+        db_engine = ENGINE
+
+    if NAME == False:
+        return f"NAME status is False."
+    else:
+        db_name=NAME
+
+    if USER == False:
+        return f"USER status is False."
+    else:
+        db_user=USER
+
+    if PASSWORD == False:
+        return f"PASSWORD status is False."
+    else:
+        db_password=PASSWORD
+
+    if HOST == False:
+        return f"HOST status is False."
+    else:
+        db_host=HOST
+
+    if PORT == False:
+        return f"PORT status is False."
+    else:
+        db_port=PORT
+
+
