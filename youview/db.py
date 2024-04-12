@@ -14,32 +14,32 @@ def set_database(
     HOST=False,
     PORT=False,):
     if ENGINE == False:
-        return f"ENGINE status is False."
+        print(f"ENGINE status is False.")
     else:
         db_engine = ENGINE
 
     if NAME == False:
-        return f"NAME status is False."
+        print(f"NAME status is False.")
     else:
         db_name=NAME
 
     if USER == False:
-        return f"USER status is False."
+        print(f"USER status is False.")
     else:
         db_user=USER
 
     if PASSWORD == False:
-        return f"PASSWORD status is False."
+        print(f"PASSWORD status is False.")
     else:
         db_password=PASSWORD
 
     if HOST == False:
-        return f"HOST status is False."
+        print(f"HOST status is False.")
     else:
         db_host=HOST
 
     if PORT == False:
-        return f"PORT status is False."
+        print(f"PORT status is False.")
     else:
         db_port=PORT
 
