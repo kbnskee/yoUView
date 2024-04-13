@@ -19,7 +19,7 @@ class Log(models.Model):
         return f"{self.action} | {self.remarks}" 
     
     class Meta:
-        ordering = ['-created_date','-update_date']
+        ordering = ['-created_date','-updated_date']
         db_table = "uv_log"
 
 

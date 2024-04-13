@@ -51,4 +51,5 @@ def check_connection():
     print(f"{db_engine} : {db_name} : {db_user} : {db_host} : {db_port}")
 
 
-#python setup.py sdist bdist_wheel
+# python setup.py sdist bdist_wheel
+# https://github.com/kbnskee/youview.git
