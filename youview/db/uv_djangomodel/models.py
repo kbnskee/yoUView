@@ -2,14 +2,15 @@ from django.db import models
 
 
 class BaseModel(models.Model):
+    is_enabled      = models.BooleanField(default=True)
     created_date    = models.DateTimeField(auto_now_add = True,blank=True,null=True)
     updated_date    = models.DateTimeField(auto_now = True,blank=True,null=True)
-    created_by      = models.CharField(max_length=225,unique=True)
-    updated_by      = models.CharField(max_length=225,unique=True)
+    created_by      = models.CharField(max_length=225)
+    updated_by      = models.CharField(max_length=225)
 
     class Meta:
         abstract = True
-        
+
 
 class Log(models.Model):
     ACTION_CHOICES=(
